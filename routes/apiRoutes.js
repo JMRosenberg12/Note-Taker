@@ -25,7 +25,7 @@ module.exports = function (app) {
 
 
         let save = JSON.stringify(notesData);
-        fs.writeFileSync("/db/db.json", save)
+        fs.writeFileSync("../db/db.json", save)
 
         res.json(JSON.stringify(notesData));
         res.redirect('back');
