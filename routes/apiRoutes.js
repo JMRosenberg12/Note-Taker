@@ -41,7 +41,7 @@ module.exports = function (app) {
     
             notesData.splice(index, 1);
           console.log(notesData);
-          fs.writeFile("/db/db.json", JSON.stringify(notesData), (results, err) => {
+          fs.writeFile("./db/db.json", JSON.stringify(notesData), (results, err) => {
             if (err) throw err;
             res.json(results)
           });
