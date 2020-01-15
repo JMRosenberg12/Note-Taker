@@ -14,11 +14,7 @@ module.exports = function (app) {
         var newNotes = req.body;
 
         // adding ID
-        notesData.forEach(Id);
-
-        function Id(item, index) {
-            item.id = index + 1;
-        };
+       newNotes.id = JSON.parse(notesData).length + 1
 
         console.log(newNotes);
         notesData.push(newNotes);
