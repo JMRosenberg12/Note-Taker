@@ -10,11 +10,11 @@ module.exports = function (app) {
     });
 
     app.post("/api/notes", function (req, res) {
-        console.log("here");
+        // console.log("here");
         var newNotes = req.body;
 
         // adding ID
-        notesData.id = Math.random()
+        notesData.id
 
         console.log(newNotes);
         notesData.push(newNotes);
