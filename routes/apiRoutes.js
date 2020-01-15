@@ -14,7 +14,7 @@ module.exports = function (app) {
         var newNotes = req.body;
 
         // adding ID
-       newNotes.id = JSON.parse(notesData).length + 1
+        notesData.id = Math.random()
 
         console.log(newNotes);
         notesData.push(newNotes);
