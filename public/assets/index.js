@@ -26,7 +26,7 @@ var saveNote = function(note) {
 
 // A function for deleting a note from the db
 var deleteNote = function(title) {
-  console.log(title)
+  console.log($delBtn)
     return $.ajax({
         url: "api/notes/" + title,
         method: "DELETE"
