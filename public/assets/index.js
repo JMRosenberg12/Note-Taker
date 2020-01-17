@@ -25,10 +25,10 @@ var saveNote = function(note) {
 };
 
 // A function for deleting a note from the db
-var deleteNote = function(title) {
-  console.log(title)
+var deleteNote = function(id) {
+ // console.log(title)
     return $.ajax({
-        url: "api/notes/" + title,
+        url: "api/notes/" + id,
         method: "DELETE"
         
       });
